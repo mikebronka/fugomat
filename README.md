@@ -56,9 +56,15 @@ Dwie wersje do wyboru w oknie eksportu:
 - **dla inwestora**: rzut z ułożeniem, ceny, koszt materiału i suma,
 - **dla wykonawcy**: bez kwot, z wymiarami ścian, dylatacjami (długości, pomieszczenia), punktem startu wzoru z odległościami od ścian, osią wzoru i uwagami wykonawczymi.
 
+PDF jest wektorowy: każda płytka, docinka, fuga, dylatacja, wymiar i napis to krzywe, a nie obraz. Przy dowolnym powiększeniu widać nawet kilkucentymetrowe docinki, a tekst da się zaznaczyć i skopiować. Płytki mogą być w kolorze (lekki plik, najczytelniej) albo ze zdjęciem płytki i wektorowymi krawędziami.
+
 Rzut z rysunku idzie w tle na jasnoszaro, a skala dobiera się do okrągłej wartości (1:50, 1:75, 1:100…). Format A4 albo A3, do wyboru też sam rzut jako PNG.
 
 [![Eksport dla wykonawcy: rzut](docs/eksport-wykonawca.jpg)](https://github.com/mikebronka/fugomat/blob/main/docs/eksport-wykonawca.jpg)
+
+Zbliżenie fragmentu tego samego PDF-a:
+
+[![Zbliżenie wektorowego PDF](docs/eksport-zblizenie.jpg)](https://github.com/mikebronka/fugomat/blob/main/docs/eksport-zblizenie.jpg)
 
 [![Eksport dla inwestora: zestawienie](docs/eksport-zestawienie.jpg)](https://github.com/mikebronka/fugomat/blob/main/docs/eksport-zestawienie.jpg)
 
@@ -103,7 +109,7 @@ Wystarczy otworzyć `index.html` w przeglądarce (potrzebny jest internet, bo bi
 
 Własna kopia na GitHub Pages: Settings → Pages → Deploy from a branch → `main` / root.
 
-Wykorzystane biblioteki: [three.js](https://threejs.org/), [Clipper](https://sourceforge.net/projects/jsclipper/), [jsPDF](https://github.com/parallax/jsPDF), [PDF.js](https://mozilla.github.io/pdf.js/).
+Wykorzystane biblioteki: [three.js](https://threejs.org/), [Clipper](https://sourceforge.net/projects/jsclipper/), [jsPDF](https://github.com/parallax/jsPDF), [PDF.js](https://mozilla.github.io/pdf.js/). Fonty osadzane w PDF: [Archivo](https://fonts.google.com/specimen/Archivo) i [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono) (SIL Open Font License).
 
 ## Zastrzeżenie
 
