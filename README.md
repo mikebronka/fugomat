@@ -45,6 +45,23 @@ Podgląd docinek (klawisz C) koloruje płytki docięte, a na czerwono te węższ
 
 Dylatacje rysuje się od ściany do ściany. Szczelina tnie płytki, a zestawienie podaje, ile sztuk przecina. Przycisk „do fugi” przesuwa wzór tak, żeby dylatacja biegła po linii fugi, jeśli wzór na to pozwala. Przy chevronie da się tak schować dylatację biegnącą wzdłuż osi grotów. Poprzeczna zawsze przetnie płytki.
 
+## Cokoły
+
+Dla każdej posadzki wybierasz rodzaj cokołu i montaż, a program liczy ilości i koszty:
+
+- **rodzaje**: listwa MDF / drewno, gotowy cokół ceramiczny, cokół cięty z płytki posadzki, profil aluminiowy,
+- **montaż**: nawierzchniowy albo licowany w tynku (z głębokością bruzdy i ostrzeżeniem, gdy bruzda wchodzi głębiej niż tynk),
+- **drzwi** (klawisz D) i **odcinki bez cokołu** (klawisz N, np. za zabudową kuchni) zaznacza się na ścianach; drzwi wycinają cokół po obu stronach ściany,
+- pomieszczenie można całkiem wyłączyć z cokołu (np. łazienkę z płytkami na ścianach).
+
+Wynik: długość netto w mb, liczba elementów z rozkrojem (odpady z jednej ściany idą na inną), narożniki wewnętrzne i zewnętrzne, zakończenia przy drzwiach, styki. Przy cokole ciętym z płytki: ile pasków wychodzi z jednej płytki (także z płytki chevron, ze ściętymi końcami), ile płytek dokupić i ile opakowań razem z posadzką.
+
+[![Cokół na rzucie, drzwi i odcinki bez cokołu](docs/cokoly-rzut.png)](https://github.com/mikebronka/fugomat/blob/main/docs/cokoly-rzut.png)
+
+Okno „Porównaj rodzaje cokołów” zestawia wszystkie warianty obok siebie: wpisujesz ceny i robociznę, a od razu widzisz ilość, materiał, robociznę, sumę i koszt wariantu licowanego.
+
+[![Porównanie rodzajów cokołów](docs/cokoly-porownanie.png)](https://github.com/mikebronka/fugomat/blob/main/docs/cokoly-porownanie.png)
+
 ## Widok 3D
 
 [![Widok 3D posadzek](docs/widok-3d.png)](https://github.com/mikebronka/fugomat/blob/main/docs/widok-3d.png)
@@ -54,7 +71,7 @@ Dylatacje rysuje się od ściany do ściany. Szczelina tnie płytki, a zestawien
 Dwie wersje do wyboru w oknie eksportu:
 
 - **dla inwestora**: rzut z ułożeniem, ceny, koszt materiału i suma,
-- **dla wykonawcy**: bez kwot, z wymiarami ścian, dylatacjami (długości, pomieszczenia), punktem startu wzoru z odległościami od ścian, osią wzoru i uwagami wykonawczymi.
+- **dla wykonawcy**: bez kwot, z wymiarami ścian, dylatacjami (długości, pomieszczenia), cokołami, drzwiami i odcinkami bez cokołu, punktem startu wzoru z odległościami od ścian, osią wzoru i uwagami wykonawczymi.
 
 PDF jest wektorowy: każda płytka, docinka, fuga, dylatacja, wymiar i napis to krzywe, a nie obraz. Przy dowolnym powiększeniu widać nawet kilkucentymetrowe docinki, a tekst da się zaznaczyć i skopiować. Płytki mogą być w kolorze (lekki plik, najczytelniej) albo ze zdjęciem płytki i wektorowymi krawędziami.
 
@@ -91,6 +108,8 @@ Raz wpisaną płytkę (wymiar, fuga, kolory, wzór, zdjęcie, opakowanie, cena) 
 | M | przesuń wzór (strzałki: 1 cm, Shift: 10 cm) |
 | O | punkt startu wzoru |
 | J | dylatacja |
+| D | drzwi (przerwa w cokole) |
+| N | odcinek bez cokołu |
 | K | kalibracja skali |
 | L | zmierz |
 | [ ] | obrót wzoru o 1° (Shift: 15°) |
